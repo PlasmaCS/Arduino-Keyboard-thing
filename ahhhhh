@@ -1,0 +1,51 @@
+int pos = 0;
+
+void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(13, OUTPUT);
+  pinMode(3, INPUT);
+  pinMode(4, INPUT);
+  pinMode(5, INPUT);
+  pinMode(6, INPUT);
+  pinMode(7, INPUT);
+  pinMode(8, INPUT);
+  pinMode(9, INPUT);
+}
+
+void loop()
+{
+  if (digitalRead(2) == HIGH) {
+    tone(13, 261.63, 100); //C4
+  }
+
+  if (digitalRead(3) == HIGH) {
+    tone(13, 293.66, 100); //D4
+  }
+
+  if (digitalRead(4) == HIGH) {
+    tone(13, 329.63	, 100); //E4
+  }
+
+  if (digitalRead(5) == HIGH) {
+    tone(13, 349.23, 100); //F4
+  }
+
+  if (digitalRead(6) == HIGH) {
+    tone(13, 392.00, 100); //G4
+  }
+
+  if (digitalRead(7) == HIGH) {
+    tone(13, 440.00, 100); //A4
+  }
+
+  if (digitalRead(8) == HIGH) {
+    tone(13, 493.88, 100); //B4
+  }
+
+  if (digitalRead(9) == HIGH) {
+    tone(13, 523.25, 100); //C5
+  }
+
+  delay(10); 
+}
